@@ -136,15 +136,15 @@ h3, h4, h5, h6 {
 }
 
 .large {
-    font-size: 125%;
+    font-size: 100%;
 }
 
 .xlarge {
-    font-size: 150%;
+    font-size: 200%;
 }
 
 .xxlarge {
-    font-size: 175%;
+    font-size: 300%;
 }
 
 @keyframes rainbowanim { 
