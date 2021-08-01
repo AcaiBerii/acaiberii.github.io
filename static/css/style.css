@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+h1, h2 {
+    font-family: "Comfortaa";
+}
+
+h3, h4, h5, h6 {
+    font-family: "Arial";
+}
+
+.rainbow-gradient {
+    --border-width: 3px;
+    position: relative;
+    background: #222;
+    border-radius: var(--border-width)
+}
+
+.rainbow-gradient::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(45deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0, #5ff281, #abf25f, #f2cb5f, #f25f61, #f25fd0, #a65ff2, #5f86f2);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 10s alternate infinite
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0turn)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.rainbow-animation {
+    --border-width: 3px;
+    --max-size: 12000px;
+    border-radius: 3px;
+    position: relative;
+    background: #222;
+    z-index: 0;
+    overflow: hidden;
+    padding: var(--border-width)
+}
+
+.rainbow-animation::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: calc(var(--max-size) * -0.5 + 50%);
+    top: calc(var(--max-size) * -0.5 + 50%);
+    width: var(--max-size);
+    height: var(--max-size);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: conic-gradient(#a65ff2, #f25f61, #f2cb5f, #5ff281, #5ff2f0, #a65ff2);
+    animation: rotate 10s linear infinite
+}
+
+.rainbow-animation::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: var(--border-width);
+    top: var(--border-width);
+    width: calc(100% - var(--border-width) - var(--border-width));
+    height: calc(100% - var(--border-width) - var(--border-width));
+    background: #222;
+    border-radius: 2px
+}
+
+@keyframes rainbow {
+    0% {
+        border-color: #b827fc
+    }
+    20% {
+        border-color: #2c90fc
+    }
+    40% {
+        border-color: #fde533
+    }
+    60% {
+        border-color: #fe9b37
+    }
+    80% {
+        border-color: #fd1892
+    }
+    100% {
+        border-color: #b827fc
+    }
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 5px
+}
