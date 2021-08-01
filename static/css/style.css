@@ -15,6 +15,11 @@ h3, h4, h5, h6 {
     border-radius: var(--border-width)
 }
 
+.rainbow-gradient * {
+    padding: 10px 10px;
+    color: white;
+}
+
 .rainbow-gradient::after {
     position: absolute;
     content: "";
