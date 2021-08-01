@@ -133,7 +133,19 @@ h3, h4, h5, h6 {
     -webkit-text-fill-color: transparent;
     animation: rainbowanim 10s ease infinite;
 }
-  
+
+.large {
+    font-size: large;
+}
+
+.xlarge {
+    font-size: x-large;
+}
+
+.xxlarge {
+    font-size: xx-large;
+}
+
 @keyframes rainbowanim { 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
