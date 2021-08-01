@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
+body {
+    background: #0a0a0a;
+}
+
 h1, h2 {
     font-family: "Comfortaa";
 }
