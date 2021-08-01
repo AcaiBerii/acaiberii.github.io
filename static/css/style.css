@@ -19,9 +19,12 @@ h3, h4, h5, h6 {
     border-radius: var(--border-width)
 }
 
-.rainbow-gradient * {
-    padding: 10px 10px;
+.container {
     color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rainbow-gradient::after {
