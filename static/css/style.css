@@ -79,7 +79,7 @@ h3, h4, h5, h6 {
     height: var(--max-size);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: conic-gradient(#a65ff2, #f25f61, #f2cb5f, #5ff281, #5ff2f0, #a65ff2);
+    background-image: conic-gradient(red, orange, yellow, green, blue, purple);
     animation: rotate 10s linear infinite
 }
 
@@ -98,22 +98,25 @@ h3, h4, h5, h6 {
 
 @keyframes rainbow {
     0% {
-        border-color: #b827fc
+        border-color: red
     }
     20% {
-        border-color: #2c90fc
+        border-color: orange
     }
     40% {
-        border-color: #fde533
+        border-color: yellow
     }
     60% {
-        border-color: #fe9b37
+        border-color: green
     }
     80% {
-        border-color: #fd1892
+        border-color: blue
+    }
+    90% {
+        border-color: purple
     }
     100% {
-        border-color: #b827fc
+        border-color: red
     }
 }
 
@@ -123,28 +126,16 @@ h3, h4, h5, h6 {
     letter-spacing: 5px
 }
 
-.rainbow_text_animated {
-    font-family: "Comfortaa";
-    color: white;
-    text-decoration: none;
-    animation: rainbow_animation 10s linear infinite;
-    animation-iteration-count: infinite
+.text-rainbow {
+    display:inline-block;
+    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowanim 10s ease infinite;
 }
-
-@keyframes rainbow_animation {
-    0% {
-        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(0deg) brightness(125%)
-    }
-    25% {
-        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(90deg) brightness(125%)
-    }
-    50% {
-        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(180deg) brightness(125%)
-    }
-    75% {
-        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(270deg) brightness(125%)
-    }
-    100% {
-        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(360deg) brightness(125%)
-    }
+  
+@keyframes rainbowanim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
