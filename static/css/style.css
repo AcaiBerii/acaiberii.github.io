@@ -122,3 +122,29 @@ h3, h4, h5, h6 {
     text-decoration: underline;
     letter-spacing: 5px
 }
+
+.rainbow_text_animated {
+    font-family: "Comfortaa";
+    color: white;
+    text-decoration: none;
+    animation: rainbow_animation 10s linear infinite;
+    animation-iteration-count: infinite
+}
+
+@keyframes rainbow_animation {
+    0% {
+        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(0deg) brightness(125%)
+    }
+    25% {
+        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(90deg) brightness(125%)
+    }
+    50% {
+        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(180deg) brightness(125%)
+    }
+    75% {
+        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(270deg) brightness(125%)
+    }
+    100% {
+        filter: saturate(0%) invert(48%) sepia(13%) saturate(3207%) hue-rotate(360deg) brightness(125%)
+    }
+}
