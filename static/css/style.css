@@ -79,8 +79,8 @@ h3, h4, h5, h6 {
     height: var(--max-size);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: conic-gradient(red, orange, yellow, green, blue, purple);
-    animation: rotate 10s linear infinite
+    background-image: conic-gradient(red, orange, yellow, green, blue, purple, red);
+    animation: rotate 1s linear infinite
 }
 
 .rainbow-animation::after {
@@ -127,11 +127,11 @@ h3, h4, h5, h6 {
 }
 
 .text-rainbow {
-    display:inline-block;
+    display: inline-block;
     background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: rainbowanim 10s ease infinite;
+    animation: rainbowanim 10s linear infinite;
     background-size: 400% 400%;
 }
 
@@ -144,7 +144,7 @@ h3, h4, h5, h6 {
 }
 
 .xxlarge {
-    font-size: 300%;
+    font-size: 500%;
 }
 
 @keyframes rainbowanim { 
