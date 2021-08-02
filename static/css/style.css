@@ -13,19 +13,19 @@ h3, h4, h5, h6 {
     font-family: "Arial";
 }
 
-.rainbow-gradient {
-    --border-width: 3px;
-    position: relative;
-    background: #222;
-    border-radius: var(--border-width)
-}
-
 .container {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.rainbow-gradient {
+    --border-width: 3px;
+    position: relative;
+    background: #222;
+    border-radius: var(--border-width)
 }
 
 .rainbow-gradient::after {
@@ -39,7 +39,7 @@ h3, h4, h5, h6 {
     background: linear-gradient(45deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0, #5ff281, #abf25f, #f2cb5f, #f25f61, #f25fd0, #a65ff2, #5f86f2);
     background-size: 300% 300%;
     background-position: 0 50%;
-    animation: moveGradient 10s alternate infinite
+    animation: moveGradient 1s linear infinite
 }
 
 @keyframes moveGradient {
@@ -112,18 +112,9 @@ h3, h4, h5, h6 {
     80% {
         border-color: blue
     }
-    90% {
-        border-color: purple
-    }
     100% {
         border-color: red
     }
-}
-
-.rainbow {
-    text-align: center;
-    text-decoration: underline;
-    letter-spacing: 5px
 }
 
 .text-rainbow {
@@ -131,7 +122,7 @@ h3, h4, h5, h6 {
     background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: rainbowanim 10s linear infinite;
+    animation: rainbowanim 5s linear infinite;
     background-size: 400% 400%;
 }
 
